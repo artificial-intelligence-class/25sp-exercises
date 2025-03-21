@@ -1,0 +1,154 @@
+\documentclass{worksheet}
+
+\usepackage{svg}
+\usepackage{nicematrix}
+\usepackage{tikz}
+
+
+\title{Problem Solving Assignment \#2}
+\author{CIT 5940}
+\date{February 21, 2025}
+
+\begin{document}
+
+\maketitle
+
+
+
+\begin{question}[Decoding with Huffman Trees][]
+    
+
+
+    
+
+\end{question}
+
+\shortanswerspace
+
+% \begin{solution}
+
+
+% \begin{verbatim}
+% e a  s t   w   e s t   
+% 00010101110111100101110
+% \end{verbatim}
+
+    
+% \end{solution}
+
+
+\begin{question}[Pre-Order Traversals][]
+    % Using the following pseudocode implementations of \texttt{PREORDER} and \texttt{VISIT}, create the string representing the Huffman Tree above that would be included in the header of a compressed output. In other words: if the node containing \texttt{12} is \texttt{root}, execute \texttt{PREORDER(root)}. Your answer should take the form of, for example, \texttt{001a1b01d1c}.
+    % \begin{figure}[h]
+    % \begin{minipage}{0.48\textwidth}
+    % \begin{lstlisting}[language=Python]
+    % def PREORDER(n):
+    %     VISIT(n)
+    %     PREORDER(n.left)
+    %     PREORDER(n.right)
+    % \end{lstlisting}
+    % \end{minipage}
+    % \hfill
+    % \begin{minipage}{0.48\textwidth}
+    % \begin{lstlisting}[language=Python]
+    % def VISIT(n):
+    %     if n is null:
+    %         return
+    %     if n is leaf:
+    %         print("1")
+    %         print(n.character)
+    %     if n is internal:
+    %         print("0")
+    % \end{lstlisting}
+    % \end{minipage}
+    % \end{figure}
+    
+\end{question}
+
+\shortanswerspace
+
+% \begin{solution}
+
+% \begin{verbatim}
+% 001e01a1r01s01d01t1w
+% \end{verbatim}
+
+
+% \end{solution}
+
+% \longanswerspace
+
+\begin{question}[Heap Representation]
+
+% Represent the following array as a Max-Heap in a Complete Binary Tree format. (You have nodes to fill in on the other sheet.)
+
+
+% \[\begin{bNiceMatrix}
+% 18 & 12 & 14 & 9 & 7 & 12 & 8 & 3 & 4 & 6
+% \end{bNiceMatrix}\]
+
+\end{question}
+
+\longanswerspace[8.5cm]
+
+\pagebreak
+
+
+% \begin{solution}
+%     \begin{tikzpicture}[level distance=1cm]
+% \node {18}
+%     child[sibling distance=4cm] {node {12}
+%         child[sibling distance=2cm] {node {9}
+%             child[sibling distance=1cm] {node {3}}
+%             child[sibling distance=1cm] {node {4}}}
+%         child[sibling distance=2cm] {node {7}
+%             child[sibling distance=1cm] {node {6}}}}
+%     child[sibling distance=4cm] {node {14}
+%         child[sibling distance=2cm] {node {12}}
+%         child[sibling distance=2cm] {node {8}}};
+% \end{tikzpicture}
+% \end{solution}
+
+\begin{question}[Heap Behavior]
+% Using the following pseudocode as a guide, report the state of the underlying array after inserting the value $13$ into the Max-Heap described above in Question 3. You may find it useful to trace through this operation thinking of the Max-Heap as a tree, but you do need to report your answer as an array.
+% \begin{figure}[h]
+%     \begin{minipage}{0.44\textwidth}
+%     \begin{lstlisting}[language=Java]
+%     def INSERT(heap, value):
+%        // size is instance var
+%        // for num of elems. stored
+%        heap[size] = value 
+%        size++
+%        SIFT_UP(heap, heap.length)
+
+%     def PARENT(index):
+%        return (index - 1) / 2
+%     \end{lstlisting}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}{0.54\textwidth}
+%     \begin{lstlisting}[language=Java]
+%     def SIFT_UP(heap, i):
+%       p = PARENT(i)
+%       while i > 0 && heap[p] < heap[i]:
+%         SWAP(heap, p, i) // switch vals
+%         i = p
+    
+%     def SWAP(heap, a, b):
+%        heap[a], heap[b] = heap[b], heap[a]
+%     \end{lstlisting}
+%     \end{minipage}
+%     \end{figure}
+\end{question}
+
+\shortanswerspace
+
+\textit{Use the space below for scratch work! But only the answers written in the boxes above will be graded.}
+
+% \begin{solution}
+% \begin{verbatim}
+%     [18, 13, 14, 9, 12, 12, 8, 3, 4, 6, 7]
+% \end{verbatim}
+% \end{solution}
+
+\end{document}
